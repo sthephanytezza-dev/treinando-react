@@ -10,6 +10,7 @@ function App() {
           name: "Sthephany",
           email: "sthe@gmail.com",
           bio: "aaaaaaaaaaaaaaaaaaaaaaaaaaa",
+          role: "admin",
         }}
       />
     </div>
