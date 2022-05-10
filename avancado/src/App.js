@@ -11,7 +11,8 @@ function App() {
     <div className="App">
       <h1>Avançado em react</h1>
       <ShowUserName name={userName} />
-      <CarsDetails brand="WV" km={100000} color="Vermelho"/>
+      <CarsDetails brand="WV" km={100000} color="Vermelho" novo={false} />
+      <CarsDetails brand="Ford" km={0} color="Azul" novo={true} />
     </div>
   );
 }
