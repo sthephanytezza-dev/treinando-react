@@ -5,6 +5,7 @@ import { useState } from "react";
 const MyForm = ({ user }) => {
   const [name, setName] = useState(user ? user.name : "");
   const [email, setEmail] = useState(user ? user.email : "");
+  const [bio, setBio] = useState(user ? user.bio : "");
 
   const handleName = (e) => {
     setName(e.target.value);
@@ -14,11 +15,12 @@ const MyForm = ({ user }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     console.log("Enviando formulario");
-    console.log(name, email);
+    console.log(name, email, bio);
 
     //limpar formulario
     setName("");
     setEmail("");
+    setBio("");
   };
 
   return (
@@ -43,6 +45,15 @@ const MyForm = ({ user }) => {
             value={email}
             onChange={(e) => setEmail(e.target.value)}
           />
+        </label>
+        <label>
+          <span>Bio:</span>
+          <textarea
+            name="bio"
+            placeholder="Descrição do usuario"
+            value={bio}
+            onChange={(e) => setBio(e.target.value)}
+          ></textarea>
         </label>
         <button>Enviar</button>
       </form>
