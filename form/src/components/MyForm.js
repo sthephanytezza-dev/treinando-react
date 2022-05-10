@@ -11,9 +11,15 @@ const MyForm = () => {
   };
   console.log(email);
 
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    console.log("Enviando formulario");
+    console.log(name, email);
+  };
+
   return (
     <div>
-      <form>
+      <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="name">Nome:</label>
           <input
@@ -32,7 +38,7 @@ const MyForm = () => {
             onChange={(e) => setEmail(e.target.value)}
           />
         </label>
-        <input type="text" value="Enviar" />
+        <button>Enviar</button>
       </form>
     </div>
   );
