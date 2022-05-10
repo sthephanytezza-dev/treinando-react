@@ -4,6 +4,7 @@ import { useState } from "react";
 import ShowUserName from "./components/ShowUserName";
 import CarsDetails from "./components/CarsDetails";
 import Fragment from "./components/Fragment";
+import Container from "./components/Container";
 
 function App() {
   const [userName] = useState("Maria");
@@ -29,6 +30,12 @@ function App() {
         />
       ))}
       <Fragment propFragment="teste" />
+      <Container myValue="teste">
+        <p>Esse é o conteúdo</p>
+      </Container>
+      <Container myValue="valor">
+        <p>Testando o container</p>
+      </Container>
     </div>
   );
 }
