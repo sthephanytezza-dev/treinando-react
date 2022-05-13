@@ -24,6 +24,26 @@
       "name": "banana",
       "price": "12",
       "id": 5
+    },
+    {
+      "name": "teclado",
+      "price": "1000",
+      "id": 6
+    },
+    {
+      "name": "joaninha",
+      "price": "20",
+      "id": 7
+    },
+    {
+      "name": "palmito",
+      "price": "25",
+      "id": 8
+    },
+    {
+      "name": "abobora",
+      "price": "5",
+      "id": 9
     }
   ]
 }
