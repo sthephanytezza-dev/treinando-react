@@ -54,6 +54,11 @@
       "name": "abacate",
       "price": "2",
       "id": 11
+    },
+    {
+      "name": "monitor",
+      "price": "1000",
+      "id": 12
     }
   ]
 }
